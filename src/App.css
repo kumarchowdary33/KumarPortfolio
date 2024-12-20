@@ -1,0 +1,172 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+}
+
+section {
+  margin: 3rem 0;
+  padding: 2rem 1rem;
+}
+
+/* Header Styles */
+.header {
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.header nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.header nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s;
+}
+
+.header nav a:hover::after {
+  width: 100%;
+}
+
+/* About Section Styles */
+.about {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  color: #ff8a00;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Projects Section Styles */
+.projects {
+  background: #fffcf2;
+  padding: 3rem;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #e52e71;
+}
+
+.project-card {
+  background: white;
+  border: none;
+  padding: 2rem;
+  margin: 1.5rem auto;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ff8a00;
+}
+
+.project-card p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Contact Section Styles */
+.contact {
+  background: linear-gradient(90deg, #e52e71, #ff8a00);
+  color: white;
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.contact p a {
+  color: #fffbe0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact p a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer a {
+  color: #ff8a00;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
